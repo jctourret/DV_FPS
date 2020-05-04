@@ -9,6 +9,7 @@ public class GunFire : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1")) 
         {
+            GlobalAmmo.currentLoaded -= 1;
             GetComponent<Animation>().Play("Gunshot");
         }        
     }
